@@ -46,16 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABS.cs" />
     <Compile Include="CalMath\CalMath.cs" />
     <Compile Include="CalMath\Constans.cs" />
     <Compile Include="CalMath\TrigFunctions.cs" />
     <Compile Include="CalMath\UnitConverter.cs" />
+    <Compile Include="combi.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fourbase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
