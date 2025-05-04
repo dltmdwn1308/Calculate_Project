@@ -46,16 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="CalMath\ScientificFunctions.cs" />
+=======
+    <Compile Include="ABS.cs" />
+    <Compile Include="CalMath\CalMath.cs" />
+>>>>>>> 82546b615bc77e5512f9a617fd8a999683c286a5
     <Compile Include="CalMath\Constans.cs" />
     <Compile Include="CalMath\TrigFunctions.cs" />
     <Compile Include="CalMath\UnitConverter.cs" />
+    <Compile Include="combi.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fourbase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
