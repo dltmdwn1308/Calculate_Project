@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace Calculate_Project.CalMath
 {
-    public class CalMath
+    public class ScientificFunctions
     {
         public double Square(double x)
         {
             return x * x;
         }
 
-        public double Power(double x, double y)
+        public double Pow(double x, double y)
         {
             return Math.Pow(x, y);
         }
 
-        public double SquareRoot(double x)
+        public double Sqrt(double x)
         {
             return Math.Sqrt(x);
         }
 
-        public double Log(double x)
+        public double Log10(double x)
         {
             return Math.Log10(x);
         }
 
-        public double NaturalLog(double x)
+        public double Ln(double x)
         {
             return Math.Log(x);
         }

@@ -6,40 +6,51 @@ using System.Threading.Tasks;
 
 namespace Calculate_Project.CalMath
 {
-    using System;
-
-    namespace Calculate_Project
+    public class UnitConverter
     {
-        public class UnitConverter
+        // 질량 변환
+        public double LbToG(double lb)
         {
-            // 킬로그램(kg) → 파운드(lb)
-            public double ConvertKgToLb(double kg)
-            {
-                double lb = kg * 2.20462;
-                return lb;
-            }
-
-            // 파운드(lb) → 킬로그램(kg)
-            public double ConvertLbToKg(double lb)
-            {
-                double kg = lb / 2.20462;
-                return kg;
-            }
-
-            // 센티미터(cm) → 인치(inch)
-            public double ConvertCmToInch(double cm)
-            {
-                double inch = cm / 2.54;
-                return inch;
-            }
-
-            // 인치(inch) → 센티미터(cm)
-            public double ConvertInchToCm(double inch)
-            {
-                double cm = inch * 2.54;
-                return cm;
-            }
+            return lb * 453.592;
         }
-    }
 
+        public double GToLb(double g)
+        {
+            return g / 453.592;
+        }
+
+        public double OzToG(double oz)
+        {
+            return oz * 28.3495;
+        }
+
+        public double GToOz(double g)
+        {
+            return g / 28.3495;
+        }
+
+        // 길이 변환
+        public double InchToM(double inch)
+        {
+            return inch / 39.3701;
+        }
+
+        public double MToInch(double m)
+        {
+            return m * 39.3701;
+        }
+
+        public double FtToM(double ft)
+        {
+            return ft / 3.28084;
+        }
+
+        public double MToFt(double m)
+        {
+            return m * 3.28084;
+        }
+
+    }
 }
+
+

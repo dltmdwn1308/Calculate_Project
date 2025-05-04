@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculate_Project.CalMath
 {
-    using System;
 
-namespace Calculate_Project
-{
     public class TrigFunctions
     {
         // 사인 함수
@@ -62,4 +59,3 @@ namespace Calculate_Project
     }
 }
 
-}

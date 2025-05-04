@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalMath\CalMath.cs" />
+    <Compile Include="CalMath\ScientificFunctions.cs" />
     <Compile Include="CalMath\Constans.cs" />
     <Compile Include="CalMath\TrigFunctions.cs" />
     <Compile Include="CalMath\UnitConverter.cs" />
