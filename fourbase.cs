@@ -6,29 +6,32 @@ using System.Threading.Tasks;
 
 namespace Calculate_Project
 {
+
     internal class fourbase
     {
-        double firstNum = double.Parse(textBox_first.Text);
-        double secondNum = double.Parse(textBox_second.Text);
-        double result = 0;
+        public double d_value;
+        public double x, y, result;
+        public char operation;
         
         switch (operation)
             {
                 case ('+'):
-                    result = firstNum + secondNum;
+                    result = x + y;
                     break;
                 case ('-'):
-                    result = firstNum - secondNum;
+                    result = x - y;
                     break;
                 case ('x'):
-                result = firstNum* secondNum;
+                    result = x * y;
                     break;
                 case ('/'):
-                result = firstNum / secondNum;
+                    if (y == 0)
+                    {
+                        MessageBox.Show("0으로 나눌 수 없습니다");
+                        return;
+                    }
+                    result = x / y;
                     break;
             }
-
-    textBox_result.Text = result.ToString();
-
     }
 }

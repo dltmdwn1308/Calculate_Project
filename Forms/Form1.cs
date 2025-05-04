@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Calculate_Project.simplipy;
 
 namespace Calculate_Project
 {
     public partial class Form1 : Form
     {
+        double x, y, result;
+        char operation;
+
         public Form1()
         {
             InitializeComponent();
@@ -73,8 +77,66 @@ namespace Calculate_Project
         }
 
 
+        private void button_add_Click(object sender, EventArgs e)
+        {
+            fourbase addFile = new fourbase();
+            operation = '+';
+        }
 
+        private void button_minus_Click(object sender, EventArgs e)
+        {
+            fourbase addFile = new fourbase();
+            operation = '-';
+        }
 
+        private void button_multiply_Click(object sender, EventArgs e)
+        {
+            fourbase addFile = new fourbase();
+            operation = 'x';
+        } 
 
+        private void button_division_Click(object sender, EventArgs e)
+        {
+            fourbase addFile = new fourbase();
+            operation = '/';
+        }
+
+        private void button_factorial_Click(object sender, EventArgs e)
+        {
+            combi addFile = new combi();
+            int n = int.Parse(textBox_result.Text);
+
+            long result = combi.factorial(n);
+        }
+
+        private void button_comb_Click(object sender, EventArgs e)
+        {
+            combi addFile = new combi();
+            int n = int.Parse(textBox_result.Text);
+            int r = int.Parse(textBox_result.Text);
+
+            long result = combi.comb(n, r);
+        }
+
+        private void button_perm_Click(object sender, EventArgs e)
+        {
+            combi addFile = new combi();
+            int n = int.Parse(textBox_result.Text);
+            int r = int.Parse(textBox_result.Text);
+
+            long result = combi.perm(n, r);
+        }
+
+        private void button_ABS_Click(object sender, EventArgs e)
+        {
+            double input = double.Parse(textBox_result.Text);
+            double result = ABS.getvalue(x);
+        }
+
+        private void button_round_Click(object sender, EventArgs e)
+        {
+            double input = double.Parse(textBox_result.Text);
+            double result = Round.getvalue(x);
+        }
     }
 }
